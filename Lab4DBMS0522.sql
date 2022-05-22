@@ -4,11 +4,11 @@
 
 -- *** DDL QUERIES TO FOLLOW****************************
 
-create database if not exists `order-directory`;
+CREATE DATABASE if not exists `order-directory`;
 use `order-directory`;
 
-create table supplier (
-	SUPP_ID 	INT primary Key AUTO_INCREMENT,
+CREATE TABLE supplier (
+	SUPP_ID 	INT PRIMARY KEY AUTO_INCREMENT,
 	SUPP_NAME 	varchar(50) NOT NULL,
 	SUPP_CITY 	varchar(50) NOT NULL,
 	SUPP_PHONE 	varchar(50) NOT NULL);
@@ -57,7 +57,7 @@ CREATE TABLE `order` (
 CREATE TABLE rating (
 	RAT_ID 			INT PRIMARY KEY AUTO_INCREMENT,
 	ORD_ID 			INT NOT NULL,
-	RAT_RATSTARS 	INT NOT NULL,
+	RAT_RATSTARS 		INT NOT NULL,
 	FOREIGN KEY (ORD_ID) REFERENCES `order` (ORD_ID));
 
 -- --DATA INSERT ------------
