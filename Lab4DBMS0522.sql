@@ -4,14 +4,14 @@
 
 -- *** DDL QUERIES TO FOLLOW****************************
 
-CREATE DATABASE if not exists `order-directory`;
-use `order-directory`;
+CREATE DATABASE IF NOT EXISTS `order-directory`;
+USE `order-directory`;
 
 CREATE TABLE supplier (
 	SUPP_ID 	INT PRIMARY KEY AUTO_INCREMENT,
-	SUPP_NAME 	varchar(50) NOT NULL,
-	SUPP_CITY 	varchar(50) NOT NULL,
-	SUPP_PHONE 	varchar(50) NOT NULL);
+	SUPP_NAME 	VARCHAR(50) NOT NULL,
+	SUPP_CITY 	VARCHAR(50) NOT NULL,
+	SUPP_PHONE 	VARCHAR(50) NOT NULL);
 
 CREATE TABLE customer (
 	CUS_ID 		INT PRIMARY KEY AUTO_INCREMENT,
