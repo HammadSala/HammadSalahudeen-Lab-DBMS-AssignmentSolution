@@ -230,7 +230,6 @@ SELECT CUS_NAME, CUS_GENDER FROM CUSTOMER
 
 
 DELIMITER &&
-DROP PROCEDURE display_supplier_ratings;
 CREATE PROCEDURE display_supplier_ratings()
 BEGIN
 
